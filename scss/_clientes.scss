@@ -1,0 +1,211 @@
+.seccionprincipal__cliente {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div .seccionprincipal__cliente__titular {
+            max-width: 80%;
+            margin: 0 auto;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 800;
+            font-size: 3.4rem;
+            line-height: 3.5rem;
+            animation-duration: 2s;
+            animation-name: aparecer;
+            animation-iteration-count: initial;
+        }
+}
+.seccion__cliente {
+    margin: 5rem 3rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #222221;
+    box-shadow: 0rem 0rem 2rem rgb(0, 0, 0, 50%);
+
+    .seccion__cliente__texto {
+        margin-top: 3rem;
+        p {
+            padding: 2rem;
+        }
+    }
+    div .seccion__cliente__img {
+        width: 15rem;
+    }
+}
+
+@media (min-width: 800px) {
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+    .seccion__cliente {
+        margin: 8rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        background-color: #222221;
+        box-shadow: 0rem 0rem 2rem rgb(0, 0, 0, 50%);
+        transition: all 0.2s;
+        &:hover {
+            transform: scale(1.1);
+        }
+        .seccion__cliente__texto {
+            margin: 5rem;
+            width: 50rem;
+            h1 {
+                text-align: left;
+                font-size: 5rem;
+            }
+            p {
+                margin-top: 2rem;
+                text-align: left;
+            }
+        }
+        .seccion__cliente__img {
+            width: 30rem;
+        }
+    }
+
+    #melodyluz {
+        flex-direction: row;
+        h1{
+            text-align: right;
+            font-size: 5rem;
+        }
+        p {
+            margin-top: 2rem;
+            text-align: right;
+        }
+    }
+
+}
+
+
+
+@media (min-width: 1200px) {
+    .seccionprincipal__cliente {
+        margin-top: 9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .seccionprincipal__cliente__titular {
+            font-size: 8rem;
+            font-weight: 900;
+            line-height: 8rem;
+        }
+    }
+
+
+    .seccion__cliente {
+        padding: 3rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        background-color: #222221;
+        box-shadow: 0rem 0rem 2rem rgb(0, 0, 0, 50%);
+        margin: 7rem 15rem;
+        .seccion__cliente__texto {
+            margin: 5rem;
+            width: 80rem;
+            h1 {
+                text-align: left;
+                font-size: 8rem;
+            }
+            p {
+                margin-top: 3rem;
+                text-align: left;
+            }
+        }
+        div {
+            .seccion__cliente__img {
+                width: 30rem;
+            }
+        }
+    }
+    #melodyluz {
+        flex-direction: row;
+        h1{
+            text-align: right;
+            font-size: 8rem;
+        }
+        p {
+            margin-top: 3rem;
+            text-align: right;
+        }
+        div {
+            .seccion__cliente__img {
+                width: 30rem;
+            }
+        }
+    }
+    
+    .seccionprincipal__cliente {
+        margin-top: 9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .seccionprincipal__cliente__titular {
+            font-size: 8rem;
+            font-weight: 900;
+            line-height: 8rem;
+        }
+    }
+
+
+    .seccion__cliente {
+        padding: 3rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: #222221;
+        box-shadow: 0rem 0rem 2rem rgb(0, 0, 0, 50%);
+        margin: 5rem auto;
+        width: 50%;
+        .seccion__cliente__texto {
+            display: flex;
+            flex-direction: column;
+            margin: 5rem auto;
+            h1 {
+                text-align: left;
+                font-size: 8rem;
+            }
+            p {
+                margin-top: 3rem;
+                text-align: left;
+            }
+        }
+        div {
+            .seccion__cliente__img {
+                width: 30rem;
+            }
+        }
+    }
+    #melodyluz {
+        flex-direction: row;
+        h1{
+            text-align: right;
+            font-size: 8rem;
+        }
+        p {
+            margin-top: 3rem;
+            text-align: right;
+        }
+        div {
+            .seccion__cliente__img {
+                width: 30rem;
+            }
+        }
+    }
+}

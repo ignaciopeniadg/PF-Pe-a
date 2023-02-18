@@ -1,0 +1,1014 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "montserrat";
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #292928;
+  background-image: url(../img/Home/fondoadornosverdes.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+body h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  font-size: 3.4rem;
+  line-height: 3.5rem;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: initial;
+}
+body h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 3.4rem;
+  line-height: 3.5rem;
+  animation-name: aparecer;
+  animation-iteration-count: initial;
+}
+body h3 {
+  text-align: center;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 400;
+  animation-name: aparecer;
+  animation-iteration-count: initial;
+}
+body h4 {
+  font-weight: 100;
+  font-style: italic;
+  animation-name: aparecer;
+  animation-iteration-count: initial;
+}
+body h5 {
+  font-weight: 100;
+  font-style: italic;
+  animation-name: aparecer;
+  animation-iteration-count: initial;
+}
+body p {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 200;
+  animation-name: aparecer;
+  animation-iteration-count: initial;
+}
+body img {
+  max-width: 100%;
+}
+body .boton {
+  background-color: #5cb2ad;
+  border: none;
+  color: white;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: all 0.2s;
+}
+body .boton:hover {
+  background-color: #744a92;
+}
+body footer {
+  padding: 3rem;
+  margin-top: 3rem;
+  background-color: #222221;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+body footer a .footer__logo {
+  width: 12rem;
+}
+body footer div a img {
+  padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  p {
+    font-size: 1.5rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+  }
+  .boton {
+    cursor: pointer;
+  }
+  label {
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar {
+    background-color: #222221;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+header {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  padding: 3rem;
+  background-color: #222221;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5);
+}
+header .navbar {
+  background-color: #222221;
+  margin: 0 auto;
+  width: 90%;
+}
+header .navbar .logo__nav {
+  width: 12rem;
+}
+header .navbar .nav-link {
+  padding-top: 2rem;
+  color: white;
+  font-weight: 200;
+  font-size: 1.6rem;
+  transition: all 0.2s;
+}
+header .navbar .nav-link:hover {
+  color: #5db2ad;
+  font-weight: 700;
+}
+
+@media (min-width: 680px) {
+  .navbar {
+    background-color: #222221;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .nav-item {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
+  .nav-item .nav-link {
+    color: white;
+    font-weight: 200;
+    font-size: 1.8rem;
+  }
+  .nav-item .nav-link:hover {
+    color: #5db2ad;
+    font-weight: 700;
+  }
+}
+.seccionprincipal {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.seccionprincipal .seccionprincipal__imagen {
+  width: 40rem;
+  padding: 5rem;
+}
+
+.logosprogramas {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: #222221;
+  padding: 3rem;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5);
+  animation-name: aparecer;
+  animation-iteration-count: initial;
+}
+
+.logosprogramas__arriba {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logosprogramas__arriba .logosprogramas__arriba__vba {
+  width: 5rem;
+  margin: 2rem;
+}
+.logosprogramas__arriba .logosprogramas__arriba__excel {
+  width: 7rem;
+  margin: 2rem;
+}
+.logosprogramas__arriba .logosprogramas__arriba__python {
+  width: 9rem;
+  margin: 2rem;
+}
+
+.logosprogramas__abajo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.logosprogramas__abajo .logosprogramas__abajo__googlesheets {
+  width: 11rem;
+  margin: 2rem;
+}
+.logosprogramas__abajo .logosprogramas__abajo__powerbi {
+  width: 9rem;
+  margin: 2rem;
+}
+
+.seccion__personal {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.seccion__personal .seccion__personal__card {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.seccion__personal .seccion__personal__card .seccion__personal__card__imagen {
+  width: 20rem;
+  padding: 3rem;
+}
+.seccion__personal .seccion__personal__card .seccion__personal__card__titulo {
+  padding-top: 2rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+@media (min-width: 800px) {
+  .seccionprincipal {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 80%;
+    margin: 3rem auto;
+    justify-content: space-around;
+    transition: all 0.2s;
+  }
+  .seccionprincipal:hover {
+    transform: scale(1.1);
+  }
+  .seccionprincipal .seccionprincipal__texto {
+    padding-right: 2rem;
+  }
+  .seccionprincipal .seccionprincipal__texto h1 {
+    text-align: right;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 4rem;
+  }
+  .seccionprincipal .seccionprincipal__texto p {
+    margin-top: 1rem;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 2.2rem;
+  }
+  .seccionprincipal .seccionprincipal__imagen {
+    width: 100rem;
+  }
+  .logosprogramas .logosprogramas__arriba .logosprogramas__arriba__vba {
+    width: 8rem;
+    margin: 3rem;
+    transition: all 0.2s;
+  }
+  .logosprogramas .logosprogramas__arriba .logosprogramas__arriba__vba:hover {
+    transform: scale(1.1);
+  }
+  .logosprogramas .logosprogramas__arriba .logosprogramas__arriba__excel {
+    width: 12rem;
+    margin: 4rem;
+    transition: all 0.2s;
+  }
+  .logosprogramas .logosprogramas__arriba .logosprogramas__arriba__excel:hover {
+    transform: scale(1.1);
+  }
+  .logosprogramas .logosprogramas__arriba .logosprogramas__arriba__python {
+    width: 13rem;
+    margin: 2rem;
+    transition: all 0.2s;
+  }
+  .logosprogramas .logosprogramas__arriba .logosprogramas__arriba__python:hover {
+    transform: scale(1.1);
+  }
+  .logosprogramas .logosprogramas__abajo .logosprogramas__abajo__googlesheets {
+    width: 18rem;
+    margin: 2rem;
+    transition: all 0.2s;
+  }
+  .logosprogramas .logosprogramas__abajo .logosprogramas__abajo__googlesheets:hover {
+    transform: scale(1.1);
+  }
+  .logosprogramas .logosprogramas__abajo .logosprogramas__abajo__powerbi {
+    width: 14rem;
+    margin: 2rem;
+    transition: all 0.2s;
+  }
+  .logosprogramas .logosprogramas__abajo .logosprogramas__abajo__powerbi:hover {
+    transform: scale(1.1);
+  }
+  .seccion__personal {
+    width: 80rem;
+    margin: 0 auto;
+    padding: 3rem;
+    transition: all 0.2s;
+  }
+  .seccion__personal:hover {
+    transform: scale(1.1);
+  }
+  .seccion__personal .seccion__personal__card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 80%;
+    margin: 3rem auto;
+    justify-content: space-around;
+  }
+  .seccion__personal .seccion__personal__card .seccion__personal__card__imagen {
+    width: 30rem;
+  }
+  .seccion__personal .seccion__personal__card div {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }
+  .seccion__personal .seccion__personal__card div .seccion__personal__card__nombre {
+    text-align: right;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 4rem;
+  }
+  .seccion__personal .seccion__personal__card div .seccion__personal__card__titulo {
+    text-align: right;
+    padding-top: 1rem;
+    font-size: 3rem;
+    font-weight: 100;
+  }
+}
+@media (min-width: 1200px) {
+  .seccionprincipal {
+    max-width: 70%;
+    margin: 3rem auto;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+  .seccionprincipal:hover {
+    transform: scale(1.1);
+  }
+  .seccionprincipal .seccionprincipal__texto h1 {
+    text-align: right;
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 8rem;
+  }
+  .seccionprincipal .seccionprincipal__texto p {
+    margin-top: 1rem;
+    text-align: right;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 3rem;
+  }
+  .seccionprincipal .seccionprincipal__imagen {
+    width: 60rem;
+  }
+  .logosprogramas {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .logosprogramas .logosprogramas__arriba {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .logosprogramas .logosprogramas__arriba .logosprogramas__arriba__vba {
+    width: 8rem;
+    margin: 3rem;
+  }
+  .logosprogramas .logosprogramas__arriba .logosprogramas__arriba__excel {
+    width: 12rem;
+    margin: 4rem;
+  }
+  .logosprogramas .logosprogramas__arriba .logosprogramas__arriba__python {
+    width: 13rem;
+    margin: 2rem;
+  }
+  .logosprogramas .logosprogramas__abajo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .logosprogramas .logosprogramas__abajo .logosprogramas__abajo__googlesheets {
+    width: 18rem;
+    margin: 2rem;
+  }
+  .logosprogramas .logosprogramas__abajo .logosprogramas__abajo__powerbi {
+    width: 14rem;
+    margin: 2rem;
+  }
+  .seccion__personal {
+    width: 80%;
+    margin: 0 auto;
+    transition: all 0.2s;
+  }
+  .seccion__personal:hover {
+    transform: scale(1.1);
+  }
+  .seccion__personal .seccion__personal__card {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .seccion__personal .seccion__personal__card .seccion__personal__card__imagen {
+    width: 40rem;
+  }
+  .seccion__personal .seccion__personal__card div {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  .seccion__personal .seccion__personal__card div .seccion__personal__card__nombre {
+    text-align: left;
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 8rem;
+  }
+  .seccion__personal .seccion__personal__card div .seccion__personal__card__titulo {
+    text-align: left;
+    padding-top: 1rem;
+    font-size: 3rem;
+    font-weight: 100;
+  }
+}
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productos .card {
+  margin: 5rem;
+  padding: 3rem;
+  background-color: #222221;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5);
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 35rem;
+  height: 65rem;
+  padding: 3rem;
+}
+.productos .card__contenedor-imagen .card__imagen {
+  width: 25rem;
+}
+.productos .card__contenedor-texto {
+  display: flex;
+  width: 25rem;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.productos .card__contenedor-texto .card__titulo {
+  margin-top: 2rem;
+  font-weight: 800;
+  font-size: 3rem;
+}
+.productos .card__contenedor-texto .card__descripcion {
+  margin-top: 2rem;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  .productos {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  .productos .card {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 37rem;
+    height: 65rem;
+    margin: 3rem;
+    padding: 3rem;
+    transition: all 0.2s;
+  }
+  .productos .card:hover {
+    transform: scale(1.1);
+  }
+  .productos .card:hover .card__contenedor-texto {
+    display: flex;
+    width: 30rem;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .productos {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .productos .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60rem;
+    height: 40rem;
+    margin: 3rem;
+    padding: 7rem;
+    transition: all 0.2s;
+  }
+  .productos .card:hover {
+    transform: scale(1.1);
+  }
+  .productos .card:hover .card__contenedor-texto {
+    display: flex;
+    width: 50rem;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+.card__titulo__cv {
+  padding-top: 3rem;
+}
+
+.card__descripcion__cv {
+  margin-top: 1rem;
+}
+
+.seccion__sobremi {
+  margin-top: 3rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: #222221;
+}
+.seccion__sobremi .seccion__sobremi__card {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+}
+.seccion__sobremi .seccion__sobremi__card .seccion__sobremi__card p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.seccion__experiencia {
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  align-items: center;
+  text-align: center;
+  background-color: #222221;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5);
+  width: 80%;
+}
+
+.seccion__info__trabajoactual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0 auto;
+  background-color: #292928;
+}
+
+.seccion__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.seccion__info .seccion__info__interno {
+  margin: 0.5rem;
+  padding: 1.5rem;
+}
+.seccion__info .seccion__info__interno h3 {
+  font-weight: 600;
+}
+
+.linea__cv1 {
+  height: 0.3rem;
+  color: #5cb2ad;
+  background-color: #5cb2ad;
+  margin: 3rem;
+}
+
+.linea__cv2 {
+  height: 0.3rem;
+  color: #744a92;
+  background-color: #744a92;
+  margin: 1.5rem;
+}
+
+.cv__puntos-experiencia {
+  width: 5rem;
+  margin: 1rem;
+}
+
+.seccion__cursos {
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  align-items: center;
+  text-align: center;
+  background-color: #292928;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5);
+  width: 80%;
+}
+
+.seccion__formacion {
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  align-items: center;
+  text-align: center;
+  background-color: #222221;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5);
+  width: 80%;
+}
+
+.seccion__idiomas {
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  align-items: center;
+  text-align: center;
+  background-color: #292928;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5);
+  width: 80%;
+}
+
+.seccion__habilidades {
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  align-items: center;
+  text-align: center;
+  background-color: #222221;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5);
+  width: 80%;
+}
+
+@media (min-width: 800px) {
+  .seccion__info {
+    border: #5cb2ad;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .seccion__info .seccion__info__interno {
+    width: 40rem;
+    align-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .cv__puntos-experiencia {
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .cv__puntos-experiencia:hover {
+    transform: scale(1.5);
+  }
+  .seccion__sobremi__card div p {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .seccion__info__trabajoactual {
+    transition: all 0.2s;
+  }
+  .seccion__info__trabajoactual:hover {
+    background-color: #744a92;
+  }
+  .seccion__experiencia, .seccion__cursos, .seccion__formacion, .seccion__idiomas, .seccion__habilidades {
+    width: 60%;
+    transition: 0.2s;
+  }
+  .seccion__experiencia:hover, .seccion__cursos:hover, .seccion__formacion:hover, .seccion__idiomas:hover, .seccion__habilidades:hover {
+    transform: scale(1.05);
+  }
+}
+.seccionprincipal__cliente {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seccionprincipal__cliente div .seccionprincipal__cliente__titular {
+  max-width: 80%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  font-size: 3.4rem;
+  line-height: 3.5rem;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: initial;
+}
+
+.seccion__cliente {
+  margin: 5rem 3rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  background-color: #222221;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5);
+}
+.seccion__cliente .seccion__cliente__texto {
+  margin-top: 3rem;
+}
+.seccion__cliente .seccion__cliente__texto p {
+  padding: 2rem;
+}
+.seccion__cliente div .seccion__cliente__img {
+  width: 15rem;
+}
+
+@media (min-width: 800px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .seccion__cliente {
+    margin: 8rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #222221;
+    box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+  }
+  .seccion__cliente:hover {
+    transform: scale(1.1);
+  }
+  .seccion__cliente .seccion__cliente__texto {
+    margin: 5rem;
+    width: 50rem;
+  }
+  .seccion__cliente .seccion__cliente__texto h1 {
+    text-align: left;
+    font-size: 5rem;
+  }
+  .seccion__cliente .seccion__cliente__texto p {
+    margin-top: 2rem;
+    text-align: left;
+  }
+  .seccion__cliente .seccion__cliente__img {
+    width: 30rem;
+  }
+  #melodyluz {
+    flex-direction: row;
+  }
+  #melodyluz h1 {
+    text-align: right;
+    font-size: 5rem;
+  }
+  #melodyluz p {
+    margin-top: 2rem;
+    text-align: right;
+  }
+}
+@media (min-width: 1200px) {
+  .seccionprincipal__cliente {
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .seccionprincipal__cliente .seccionprincipal__cliente__titular {
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 8rem;
+  }
+  .seccion__cliente {
+    padding: 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #222221;
+    box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5);
+    margin: 7rem 15rem;
+  }
+  .seccion__cliente .seccion__cliente__texto {
+    margin: 5rem;
+    width: 80rem;
+  }
+  .seccion__cliente .seccion__cliente__texto h1 {
+    text-align: left;
+    font-size: 8rem;
+  }
+  .seccion__cliente .seccion__cliente__texto p {
+    margin-top: 3rem;
+    text-align: left;
+  }
+  .seccion__cliente div .seccion__cliente__img {
+    width: 30rem;
+  }
+  #melodyluz {
+    flex-direction: row;
+  }
+  #melodyluz h1 {
+    text-align: right;
+    font-size: 8rem;
+  }
+  #melodyluz p {
+    margin-top: 3rem;
+    text-align: right;
+  }
+  #melodyluz div .seccion__cliente__img {
+    width: 30rem;
+  }
+  .seccionprincipal__cliente {
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .seccionprincipal__cliente .seccionprincipal__cliente__titular {
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 8rem;
+  }
+  .seccion__cliente {
+    padding: 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #222221;
+    box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5);
+    margin: 5rem auto;
+    width: 50%;
+  }
+  .seccion__cliente .seccion__cliente__texto {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem auto;
+  }
+  .seccion__cliente .seccion__cliente__texto h1 {
+    text-align: left;
+    font-size: 8rem;
+  }
+  .seccion__cliente .seccion__cliente__texto p {
+    margin-top: 3rem;
+    text-align: left;
+  }
+  .seccion__cliente div .seccion__cliente__img {
+    width: 30rem;
+  }
+  #melodyluz {
+    flex-direction: row;
+  }
+  #melodyluz h1 {
+    text-align: right;
+    font-size: 8rem;
+  }
+  #melodyluz p {
+    margin-top: 3rem;
+    text-align: right;
+  }
+  #melodyluz div .seccion__cliente__img {
+    width: 30rem;
+  }
+}
+.seccionprincipal__formulario {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seccionprincipal__formulario .seccionprincipal__formulario__titular {
+  max-width: 80%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  font-size: 3.4rem;
+  line-height: 3.5rem;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: initial;
+}
+
+.formulariocontacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formulariocontacto form {
+  margin-top: 3rem;
+  width: 80%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.formulariocontacto div .form-control {
+  border-color: #5cb2ad;
+  border-width: 0.15rem;
+  font-size: 1.5rem;
+  font-family: "montserrat";
+}
+.formulariocontacto div .form-label {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  .seccionprincipal__formulario {
+    padding-top: 3rem;
+  }
+  .seccionprincipal__formulario .seccionprincipal__formulario__titular {
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 5rem;
+  }
+  .formulariocontacto form {
+    margin-top: 3rem;
+    width: 80%;
+    font-size: 1.5rem;
+  }
+  .formulariocontacto .form-control {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1920px) {
+  .seccionprincipal__formulario {
+    padding-top: 3rem;
+  }
+  .seccionprincipal__formulario .seccionprincipal__formulario__titular {
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 8rem;
+  }
+  .formulariocontacto form {
+    width: 60%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

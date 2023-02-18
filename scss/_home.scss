@@ -1,0 +1,327 @@
+
+.seccionprincipal {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .seccionprincipal__imagen {
+        width: 40rem;
+        padding: 5rem;
+    }
+}
+
+.logosprogramas {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #222221;
+    padding: 3rem;
+    box-shadow: 0rem 0rem 2rem rgb(0, 0, 0, 50%);
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+.logosprogramas__arriba {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .logosprogramas__arriba__vba {
+        width: 5rem;
+        margin: 2rem;
+    }
+    .logosprogramas__arriba__excel {
+        width: 7rem;
+        margin: 2rem;
+    }
+    .logosprogramas__arriba__python {
+        width: 9rem;
+        margin: 2rem;
+    }
+}
+
+.logosprogramas__abajo {
+display: flex;
+flex-direction: row;
+justify-content:center;
+
+    .logosprogramas__abajo__googlesheets {
+        width: 11rem;
+        margin: 2rem;
+    }
+    .logosprogramas__abajo__powerbi {
+        width: 9rem;
+        margin: 2rem;
+    }
+}
+
+
+.seccion__personal {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+    .seccion__personal__card {
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .seccion__personal__card__imagen {
+            width: 20rem;
+            padding: 3rem;
+        }
+        .seccion__personal__card__titulo {
+            padding-top: 2rem;
+            text-decoration: none;
+            list-style: none;
+        }
+    }
+}
+
+
+@media (min-width: 800px) {
+    
+    .seccionprincipal {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        max-width: 80%;
+        margin: 3rem auto;
+        justify-content: space-around;
+        transition: all 0.2s;
+        
+        &:hover {
+            transform: scale(1.1);
+        }
+        .seccionprincipal__texto {
+            padding-right: 2rem;
+            h1 {
+                text-align: right;
+                font-size: 4rem;
+                font-weight: 900;
+                line-height: 4rem;
+            }
+            p {
+                margin-top: 1rem;
+                text-align: right;
+                font-size: 1.2rem;
+                font-weight: 100;
+                line-height: 2.2rem;
+            }
+        }
+        .seccionprincipal__imagen {
+            width: 100rem;
+        }
+    }
+    
+    .logosprogramas {
+        .logosprogramas__arriba {
+            .logosprogramas__arriba__vba {
+                width: 8rem;
+                margin: 3rem;
+                transition: all 0.2s;
+                &:hover {
+                transform: scale(1.1);
+            }
+            }
+            .logosprogramas__arriba__excel {
+                width: 12rem;
+                margin: 4rem;
+                transition: all 0.2s;
+                &:hover {
+                transform: scale(1.1);
+            }
+            }
+            .logosprogramas__arriba__python {
+                width: 13rem;
+                margin: 2rem;
+                transition: all 0.2s;
+                &:hover {
+                transform: scale(1.1);
+            }
+            }
+        }
+        .logosprogramas__abajo {
+            .logosprogramas__abajo__googlesheets {
+                width: 18rem;
+                margin: 2rem;
+                transition: all 0.2s;
+                &:hover {
+                transform: scale(1.1);
+            }
+            }
+            .logosprogramas__abajo__powerbi {
+                width: 14rem;
+                margin: 2rem;
+                transition: all 0.2s;
+                &:hover {
+                transform: scale(1.1);
+            }
+            }
+            
+        }
+    }
+    
+    .seccion__personal {
+        width: 80rem;
+        margin: 0 auto;
+        padding: 3rem;
+        transition: all 0.2s;
+        
+        &:hover {
+            transform: scale(1.1);
+        }
+        .seccion__personal__card {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            max-width: 80%;
+            margin: 3rem auto;
+            justify-content: space-around;
+    
+            .seccion__personal__card__imagen {
+                width: 30rem;
+            }
+    
+            div {
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: right;
+
+                .seccion__personal__card__nombre {
+                    text-align: right;
+                    font-size: 4rem;
+                    font-weight: 900;
+                    line-height: 4rem;
+                }
+                
+                .seccion__personal__card__titulo {
+                    text-align: right;
+                    padding-top: 1rem;
+                    font-size: 3rem;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .seccionprincipal {
+        max-width: 70%;
+        margin: 3rem auto;
+        justify-content: center;
+        transition: all 0.2s;
+        
+        &:hover {
+            transform: scale(1.1);
+        }
+        .seccionprincipal__texto {
+
+            h1 {
+                text-align: right;
+                font-size: 8rem;
+                font-weight: 900;
+                line-height: 8rem;
+            }
+            p {
+                margin-top: 1rem;
+                text-align: right;
+                font-size: 2rem;
+                font-weight: 100;
+                line-height: 3rem;
+            }
+        }
+        .seccionprincipal__imagen {
+            width: 60rem;
+        }
+    }
+    .logosprogramas {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        .logosprogramas__arriba {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+    
+            .logosprogramas__arriba__vba {
+                width: 8rem;
+                margin: 3rem;
+            }
+            .logosprogramas__arriba__excel {
+                width: 12rem;
+                margin: 4rem;
+            }
+            .logosprogramas__arriba__python {
+                width: 13rem;
+                margin: 2rem;
+            }
+        }
+        
+        .logosprogramas__abajo {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+            .logosprogramas__abajo__googlesheets {
+                width: 18rem;
+                margin: 2rem;
+            }
+            .logosprogramas__abajo__powerbi {
+                width: 14rem;
+                margin: 2rem;
+            }
+        }
+    }
+    .seccion__personal {
+        width: 80%;
+        margin: 0 auto;
+        transition: all 0.2s;
+        
+        &:hover {
+            transform: scale(1.1);
+        }
+        .seccion__personal__card {
+            display: flex;
+            flex-direction: row-reverse;
+            margin: 0 auto;
+            justify-content: space-between;
+    
+            .seccion__personal__card__imagen {
+                width: 40rem;
+            }
+    
+            div {
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+
+                .seccion__personal__card__nombre {
+                    text-align: left;
+                    font-size: 8rem;
+                    font-weight: 900;
+                    line-height: 8rem;
+                }
+                
+                .seccion__personal__card__titulo {
+                    text-align: left;
+                    padding-top: 1rem;
+                    font-size: 3rem;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}
+

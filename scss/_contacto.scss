@@ -1,0 +1,84 @@
+
+.seccionprincipal__formulario {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .seccionprincipal__formulario__titular {
+        max-width: 80%;
+        margin: 0 auto;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 800;
+        font-size: 3.4rem;
+        line-height: 3.5rem;
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-iteration-count: initial;
+    }
+}
+
+.formulariocontacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form {
+        margin-top: 3rem;
+        width: 80%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    div {
+        .form-control {
+            border-color: #5cb2ad;
+            border-width: 0.15rem;
+            font-size: 1.5rem;
+            font-family: "montserrat";
+        }
+        .form-label {
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .seccionprincipal__formulario {
+        padding-top: 3rem;
+
+        .seccionprincipal__formulario__titular {
+            font-size: 5rem;
+            font-weight: 900;
+            line-height: 5rem;
+        }
+    }
+    .formulariocontacto{
+        form {
+            margin-top: 3rem;
+            width: 80%;
+            font-size: 1.5rem;
+        }
+        .form-control {
+            font-size: 1.5rem;
+        }
+    }
+    
+}
+
+@media (min-width: 1920px) {
+    .seccionprincipal__formulario {
+        padding-top: 3rem;
+        .seccionprincipal__formulario__titular {
+            font-size: 8rem;
+            font-weight: 900;
+            line-height: 8rem;
+        }
+    }
+    .formulariocontacto{
+        form {
+            width: 60%;
+        }
+    }
+}

@@ -1,0 +1,180 @@
+
+.card__titulo__cv {
+    padding-top: 3rem;
+}
+.card__descripcion__cv {
+    margin-top: 1rem;
+}
+
+
+.seccion__sobremi {
+    margin-top: 3rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: #222221;
+
+    .seccion__sobremi__card {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        padding: 3rem;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+
+        .seccion__sobremi__card p {
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.seccion__experiencia {
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    align-items: center;
+    text-align: center;
+    background-color: #222221;
+    box-shadow: 0rem 0rem 2rem rgb(0, 0, 0, 50%);
+    width: 80%;
+}
+.seccion__info__trabajoactual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: #292928;
+
+}
+.seccion__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    .seccion__info__interno {
+        margin: 0.5rem;
+        padding: 1.5rem;
+
+            h3 {
+                font-weight: 600;
+            }
+        }
+}
+
+.linea__cv1 {
+    height: 0.3rem;
+    color: #5cb2ad;
+    background-color:#5cb2ad;
+    margin: 3rem;
+}
+.linea__cv2 {
+    height: 0.3rem;
+    color: #744a92;
+    background-color:#744a92;
+    margin: 1.5rem;
+}
+.cv__puntos-experiencia {
+    width: 5rem;
+    margin: 1rem;
+}
+
+.seccion__cursos {
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    align-items: center;
+    text-align: center;
+    background-color: #292928;
+    box-shadow: 0rem 0rem 2rem rgb(0, 0, 0, 50%);
+    width: 80%;
+}
+.seccion__formacion{
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    align-items: center;
+    text-align: center;
+    background-color: #222221;
+    box-shadow: 0rem 0rem 2rem rgb(0, 0, 0, 50%);
+    width: 80%;
+}
+.seccion__idiomas {
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    align-items: center;
+    text-align: center;
+    background-color: #292928;
+    box-shadow: 0rem 0rem 2rem rgb(0, 0, 0, 50%);
+    width: 80%;
+}
+.seccion__habilidades {
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    align-items: center;
+    text-align: center;
+    background-color: #222221;
+    box-shadow: 0rem 0rem 2rem rgb(0, 0, 0, 50%);
+    width: 80%;
+}
+
+
+@media (min-width: 800px) {
+    .seccion__info {
+        border: #5cb2ad;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .seccion__info__interno {
+            width: 40rem;
+            align-content: center;
+        }
+    }
+
+    
+}
+@media (min-width: 1200px) {
+    .cv__puntos-experiencia {
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+    .seccion__sobremi__card {
+        div {
+            p {
+                width: 60%;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+    .seccion__info__trabajoactual {
+        transition: all 0.2s;
+        &:hover {
+            background-color: #744a92;
+        }
+    }
+
+
+    .seccion__experiencia, .seccion__cursos, .seccion__formacion, .seccion__idiomas, .seccion__habilidades {
+        width: 60%;
+        transition: 0.2s;
+        &:hover {
+            transform: scale(1.05);
+        }
+
+    }
+}

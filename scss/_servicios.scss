@@ -1,0 +1,111 @@
+.productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card {
+        margin: 5rem;
+        padding: 3rem ;
+        background-color: #222221;
+        box-shadow: 0rem 0rem 2rem rgb(0, 0, 0, 50%);
+    
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width: 35rem;
+        height: 65rem;
+        padding: 3rem;
+    }
+    .card__contenedor-imagen {
+        .card__imagen {
+            width: 25rem;
+        }
+    }
+    .card__contenedor-texto {
+        display: flex;
+        width: 25rem;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        .card__titulo {
+            margin-top: 2rem;
+            font-weight: 800;
+            font-size: 3rem;
+        }
+
+        .card__descripcion {
+            margin-top: 2rem;
+            font-weight: 200;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+.productos {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    justify-content: space-around;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        width: 37rem;
+        height: 65rem;
+        margin: 3rem;
+        padding: 3rem;
+        transition: all 0.2s;
+        &:hover {
+            transform: scale(1.1);
+            
+        .card__contenedor-texto {
+            display: flex;
+            width: 30rem;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        }
+    }
+}
+}
+
+@media (min-width: 1200px){
+    .productos {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0 auto;
+        justify-content:center;
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 60rem;
+            height: 40rem;
+            margin: 3rem;
+            padding: 7rem;
+            transition: all 0.2s;
+            &:hover {
+                transform: scale(1.1);
+                
+            .card__contenedor-texto {
+                display: flex;
+                width: 50rem;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+            }
+            }
+        }
+    }
+}
